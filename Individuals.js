@@ -1,9 +1,9 @@
-var faker = require('faker');
+const faker = require('faker');
 
 function generateIndividuals() {
-    var inidividuals = [];
+    let inidividuals = [];
 
-    for (var id = 1; id < 11; id++){
+    for (let id = 1; id < 11; id++){
         inidividuals.push({
             id: id,
             firstName: faker.name.firstName(),
@@ -13,7 +13,7 @@ function generateIndividuals() {
                 line1: faker.address.streetAddress(),
                 city: faker.address.city(),
                 state: faker.address.state(),
-                zip: faker.address.zipCode()
+                zip: faker.address.zipCode(),
             }
         })
     }
